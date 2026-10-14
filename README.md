@@ -46,6 +46,7 @@ references/patterns.md              8 patterns: login, search with filters, dash
 references/screens/web-app.md       2 screens, 80 columns
 references/screens/mobile-app.md    2 screens, 40 columns
 references/screens/landing-page.md  1 screen, 80 columns
+references/screens/flows.md         1 flow, 5 screens, web and mobile
 scripts/validate.py                 optional validator
 ```
 

@@ -84,6 +84,7 @@ Read only what the request needs.
 | `references/screens/web-app.md` | Full web app screens, 80 columns. |
 | `references/screens/mobile-app.md` | Full mobile app screens, 40 columns. |
 | `references/screens/landing-page.md` | Full landing pages, 80 columns. |
+| `references/screens/flows.md` | A flow, a journey or all screens of a feature. Mixed web and mobile. |
 
 ## Content rules
 
@@ -100,7 +101,7 @@ Read only what the request needs.
 
 ### Multiple screens
 
-When the user asks for a flow, a journey or all screens of a feature:
+When the user asks for a flow, a journey or all screens of a feature (example in `references/screens/flows.md`):
 
 - Pick the screens it needs and put them in order.
 - Start with one short line naming it, for example: Checkout flow, 3 screens.
