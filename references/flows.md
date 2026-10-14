@@ -2,7 +2,7 @@
 
 Multi-screen output: a flow, a journey or all screens of one feature. Follow the Multiple screens rules in `SKILL.md`.
 
-Read `primitives.md` first, then the screen file for each width the flow uses. Each screen keeps its own width, so web and mobile screens can share one flow.
+Read `primitives.md` first, then the sections of `screens.md` for the widths the flow uses. Each screen keeps its own width, so web and mobile screens can share one flow.
 
 Two differences from a real reply or saved file, both so this file works as a reference:
 

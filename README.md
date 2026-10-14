@@ -43,10 +43,9 @@ references/components.md            18 component sheets
 references/patterns.md              8 patterns: login, search with filters, dashboard
                                     header, pricing, empty state, table toolbar,
                                     settings list, product grid
-references/screens/web-app.md       2 screens, 80 columns
-references/screens/mobile-app.md    2 screens, 40 columns
-references/screens/landing-page.md  1 screen, 80 columns
-references/screens/flows.md         1 flow, 5 screens, web and mobile
+references/screens.md               5 screens: web app and landing page
+                                    at 80 columns, mobile app at 40
+references/flows.md                 1 flow, 5 screens, web and mobile
 scripts/validate.py                 optional validator
 ```
 
@@ -79,7 +78,7 @@ When asked for a wireframe, follow ascii-wireframe/SKILL.md.
 Requires Python 3, no dependencies.
 
 ```bash
-python3 scripts/validate.py references/*.md references/screens/*.md
+python3 scripts/validate.py references/*.md
 ```
 
 For a markdown file it checks every fenced block labelled `wire`. Any other file, or `-` for stdin, is treated as one drawing. It exits non zero when a row is the wrong width or a border does not line up.

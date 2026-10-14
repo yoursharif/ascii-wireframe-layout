@@ -81,10 +81,8 @@ Read only what the request needs.
 | `references/primitives.md` | Always, first. Grid, borders, inline tokens, icons, text hierarchy. |
 | `references/components.md` | The drawing needs a button, input, card, navbar, table, modal, tab bar or any single UI part. |
 | `references/patterns.md` | The drawing needs a login form, search with filters, dashboard header, pricing block, empty state, table with toolbar, settings list or product grid. |
-| `references/screens/web-app.md` | Full web app screens, 80 columns. |
-| `references/screens/mobile-app.md` | Full mobile app screens, 40 columns. |
-| `references/screens/landing-page.md` | Full landing pages, 80 columns. |
-| `references/screens/flows.md` | A flow, a journey or all screens of a feature. Mixed web and mobile. |
+| `references/screens.md` | Full screens: web app and landing page at 80 columns, mobile app at 40. Read only the section you need. |
+| `references/flows.md` | A flow, a journey or all screens of a feature. Mixed web and mobile. |
 
 ## Content rules
 
@@ -101,7 +99,7 @@ Read only what the request needs.
 
 ### Multiple screens
 
-When the user asks for a flow, a journey or all screens of a feature (example in `references/screens/flows.md`):
+When the user asks for a flow, a journey or all screens of a feature (example in `references/flows.md`):
 
 - Pick the screens it needs and put them in order.
 - Start with one short line naming it, for example: Checkout flow, 3 screens.
