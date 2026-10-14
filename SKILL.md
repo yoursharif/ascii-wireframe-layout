@@ -98,6 +98,15 @@ Read only what the request needs.
 - At most one short line above it, for example: Web dashboard, 80 columns.
 - When asked to change something, redraw the whole drawing and validate again. Do not patch single rows.
 
+### Saving to a file
+
+Only when the user asks to save, download or export the wireframe:
+
+- Save it as a `.md` file named after the screen, lowercase with hyphens, for example `web-analytics-dashboard.md`. Use the folder the user names, otherwise the current working directory.
+- File content: a `#` title, the one short line, then the same `text` code block.
+- When the drawing changes later, redraw it and overwrite the same file.
+- Tell the user the file path. If you cannot write files, put the same markdown in the reply so the user can save it.
+
 ## Annotations
 
 Not defined yet. Do not add numbered callouts, legends or notes unless the user asks for them. Draw the clean wireframe only.
