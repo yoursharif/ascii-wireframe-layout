@@ -95,4 +95,10 @@ Run it after any edit to the references. Every drawing in this repo passes.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright (c) 2026 Md Shariful Islam Khan.
+
+- You can install and use the skill, and share unchanged copies, with credit.
+- You can't sell it or use it in a paid product.
+- You can't share modified versions.
+
+Full terms in [LICENSE](LICENSE).
