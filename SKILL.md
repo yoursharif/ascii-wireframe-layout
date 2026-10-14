@@ -94,9 +94,21 @@ Read only what the request needs.
 
 ## Output format
 
-- Reply with the drawing in one fenced code block labelled `text`. Nothing inside the block except the drawing.
+- Reply with the drawing in one fenced code block labelled `text`. Nothing inside the block except the drawing. For several screens, see Multiple screens.
 - At most one short line above it, for example: Web dashboard, 80 columns.
 - When asked to change something, redraw the whole drawing and validate again. Do not patch single rows.
+
+### Multiple screens
+
+When the user asks for a flow, a journey or all screens of a feature:
+
+- Pick the screens it needs and put them in order.
+- Start with one short line naming it, for example: Checkout flow, 3 screens.
+- For a flow, add one line listing the steps with `>`, for example: Flow: Cart > Details > Confirmation.
+- Give each screen a numbered `##` heading, one short line with its target and width, then its own `text` block. Each screen keeps its own width, so web and mobile screens can share one reply.
+- For a flow, put one line under each block except the last, saying how the user reaches the next screen, for example: Next: tap [[ Continue ]] > 2. Details. Keep it outside the block.
+- Validate every screen on its own.
+- When asked to change one screen, redraw that screen in full and replace only its block.
 
 ### Saving to a file
 
@@ -104,9 +116,10 @@ Only when the user asks to save, download or export the wireframe:
 
 - Save it as a `.md` file named after the screen, lowercase with hyphens, for example `web-analytics-dashboard.md`. Use the folder the user names, otherwise the current working directory.
 - File content: a `#` title, the one short line, then the same `text` code block.
+- For multiple screens, save one file for the whole flow or feature, named after it, for example `checkout-flow.md`. Under the `#` title, use the same lines, headings, blocks and Next lines as the reply.
 - When the drawing changes later, redraw it and overwrite the same file.
 - Tell the user the file path. If you cannot write files, put the same markdown in the reply so the user can save it.
 
 ## Annotations
 
-Not defined yet. Do not add numbered callouts, legends or notes unless the user asks for them. Draw the clean wireframe only.
+Not defined yet. Do not add numbered callouts, legends or notes unless the user asks for them. Draw the clean wireframe only. The Flow and Next lines of a multi-screen flow are not annotations, because they sit outside the drawings.
