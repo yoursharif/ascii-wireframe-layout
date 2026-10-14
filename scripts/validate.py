@@ -2,8 +2,8 @@
 """Validate ASCII wireframes.
 
 Usage:
-  python validate.py FILE [FILE ...]
-  python validate.py -            (read one drawing from stdin)
+  python3 validate.py FILE [FILE ...]
+  python3 validate.py -            (read one drawing from stdin)
 
 A markdown file is checked block by block: only fenced blocks labelled `wire`.
 Any other file (or stdin) is treated as one drawing.
