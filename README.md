@@ -92,3 +92,7 @@ Checks:
 5. Every `+` that touches a `-` has a `|` or `+` directly above or below.
 
 Run it after any edit to the references. Every drawing in this repo passes.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
