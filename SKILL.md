@@ -66,8 +66,8 @@ For every drawing, before output:
 If you can run code, run the script and treat its output as the source of truth:
 
 ```
-python scripts/validate.py drawing.txt
-python scripts/validate.py references/components.md
+python3 scripts/validate.py drawing.txt
+python3 scripts/validate.py references/components.md
 ```
 
 It accepts a plain text file (the whole file is one drawing), a markdown file (it checks every fenced block labelled `wire`), or `-` for stdin. It exits with a non zero code when a row is the wrong width or a border does not line up.
