@@ -58,7 +58,7 @@ The skill folder should be named `ascii-wireframe`, matching the `name` in `SKIL
 **Claude Code**, for all your projects:
 
 ```bash
-git clone https://github.com/yoursharif/ascii-wireframe-skill.git ~/.claude/skills/ascii-wireframe
+git clone https://github.com/yoursharif/ascii-wireframe-layout.git ~/.claude/skills/ascii-wireframe
 ```
 
 Or for one project, clone into `.claude/skills/ascii-wireframe` inside that repo.
