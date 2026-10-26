@@ -137,16 +137,16 @@ The active tab is underlined with `=`.
 Title bar, body, action footer. Actions sit on the right, primary last.
 
 ```wire
-+- Modal ----------------------------------------+
-|  +------------------------------------------+  |
-|  | Delete project                       [X] |  |
-|  +------------------------------------------+  |
-|  | Are you sure? This cannot be undone.     |  |
-|  |                                          |  |
-|  +------------------------------------------+  |
-|  |                 [ Cancel ]  [! Delete !] |  |
-|  +------------------------------------------+  |
-+------------------------------------------------+
++- Modal --------------------------------------+
+| +------------------------------------------+ |
+| | Delete project                       [X] | |
+| +------------------------------------------+ |
+| | Are you sure? This cannot be undone.     | |
+| |                                          | |
+| +------------------------------------------+ |
+| |                 [ Cancel ]  [! Delete !] | |
+| +------------------------------------------+ |
++----------------------------------------------+
 ```
 
 ## Table
@@ -175,21 +175,21 @@ Columns share junctions. Sorted column gets `v` or `^`. Status uses the `(Status
 
 ## Sidebar (web)
 
-Active item starts with `>`.
+Active item starts with `>`. The frame here is the sidebar column itself: 18 columns between borders, the same as the screens in `screens.md`.
 
 ```wire
-+- Sidebar --------------+
-| LOGO                   |
-|                        |
-| > Dashboard            |
-|   Orders               |
-|   Customers            |
-|   Reports              |
-|                        |
-| ---------------------- |
-|   Settings             |
-|   Help                 |
-+------------------------+
++- Sidebar --------+
+| LOGO             |
+|                  |
+| > Dashboard      |
+|   Orders         |
+|   Customers      |
+|   Reports        |
+|                  |
+| --------------   |
+|   Settings       |
+|   Help           |
++------------------+
 ```
 
 ## KPI card

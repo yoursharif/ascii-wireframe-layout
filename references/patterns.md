@@ -84,7 +84,7 @@ The featured tier gets a title in its top edge and the primary button.
 
 ```wire
 +- Pricing block --------------------------------------------------------------+
-|                                   PRICING                                    |
+|                                   Pricing                                    |
 |                       Simple plans that scale with you                       |
 |                                                                              |
 | +----------------------+  +- Popular ------------+  +----------------------+ |

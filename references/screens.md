@@ -32,7 +32,7 @@ Frame width 80, inner width 76. Header spans the full width. Sidebar is 18 colum
 |                  | | Jan 1                                          Jan 30 | |
 |                  | +-------------------------------------------------------+ |
 |                  |                                                           |
-|                  | RECENT ORDERS                                             |
+|                  | Recent Orders                                             |
 |                  | +---------+-----------------+-------------+-------------+ |
 |                  | | Order   | Customer        | Status      | Total       | |
 |                  | +---------+-----------------+-------------+-------------+ |
@@ -95,7 +95,7 @@ Frame width 40, inner width 36. Status bar on top, app bar next, content, then t
 | Categories                           |
 | [All]  Shoes  Bags  Watches  Tops    |
 |                                      |
-| Popular now                <See all> |
+| Popular Now                <See all> |
 | +---------------+  +---------------+ |
 | | +-----------+ |  | +-----------+ | |
 | | |           | |  | |           | | |
@@ -108,7 +108,7 @@ Frame width 40, inner width 36. Status bar on top, app bar next, content, then t
 | | [[ Add ]]     |  | [[ Add ]]     | |
 | +---------------+  +---------------+ |
 |                                      |
-| New arrivals               <See all> |
+| New Arrivals               <See all> |
 | +-----+  Trail Runner 2              |
 | |     |  $89.00                      |
 | |     |  [ Save ]                    |
@@ -189,9 +189,9 @@ Section order: navbar, hero, social proof, features, testimonial, pricing, closi
 |                                                                              |
 | ---------------------------------------------------------------------------- |
 |                             Trusted by teams at                              |
-|             [ Logo ]   [ Logo ]   [ Logo ]   [ Logo ]   [ Logo ]             |
+|                   LOGO     LOGO     LOGO     LOGO     LOGO                   |
 | ---------------------------------------------------------------------------- |
-|                                   FEATURES                                   |
+|                                   Features                                   |
 |                        Everything you need to launch                         |
 |                                                                              |
 | +----------------------+  +----------------------+  +----------------------+ |
@@ -205,7 +205,7 @@ Section order: navbar, hero, social proof, features, testimonial, pricing, closi
 |         xxxx xxxxx xxxx xxxxxxx xxxxx xxxx xxxxxxx xxxxx xxxx xxxxx.         |
 |                        (@) Ana Silva, Head of Product                        |
 | ---------------------------------------------------------------------------- |
-|                                   PRICING                                    |
+|                                   Pricing                                    |
 |                                                                              |
 | +----------------------+  +- Popular ------------+  +----------------------+ |
 | |       STARTER        |  |         TEAM         |  |       BUSINESS       | |
