@@ -1,6 +1,6 @@
 # Patterns
 
-Common multi-component groups. Copy the pattern, then swap the labels. Keep the widths.
+Groups of components that solve one common user task. Copy the pattern, then swap the labels. Keep the widths.
 
 Read `components.md` first.
 

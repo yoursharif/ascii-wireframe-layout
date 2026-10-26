@@ -7,7 +7,7 @@ The smallest pieces. Every component, pattern and screen is built from these.
 - One character is one column. Assume a monospace font.
 - Frame widths: 80 for web and landing, 40 for mobile.
 - Inner width is frame width minus 4 (border plus 1 padding space on each side).
-- Padding is 1 space inside every box. Gap between side by side boxes is 1 column.
+- Padding is 1 space inside every box. Gap between side by side boxes is 1 column, or 2 when equal columns need it to fill the width exactly (three columns at 80, two at 40).
 - A blank row separates groups of content. Two blank rows are never needed.
 
 ## Borders
@@ -99,6 +99,7 @@ ICON BUTTONS
 FORM CONTROLS
 [x] checked         [ ] unchecked       (o) selected       ( ) unselected
 [ON ] toggle on     [OFF] toggle off
+[All]  Shoes  Bags        selected option, chip or mobile tab in brackets
 [ Choose one        v ]   select
 [________________]        inline input
 [ 12/200 ]                counter
@@ -118,8 +119,10 @@ Home > Products > Shoes
  ========
 
 TEXT
+LOGO                       logo placeholder
 PAGE TITLE                 H1, all caps
 Section Title              H2, title case
+GROUP LABEL                sidebar groups, footer columns, plan names, all caps
 Body copy, sentence case   body
 xxxx xxxxx xxx xxxxxxx     body copy placeholder
 ```

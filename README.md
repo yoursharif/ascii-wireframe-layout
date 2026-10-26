@@ -1,6 +1,6 @@
 # ascii-wireframe
 
-An agent skill that draws low-fidelity UI wireframes as fixed-width ASCII. Web app screens, mobile screens, landing pages, single components and common patterns.
+An agent skill that draws low-fidelity UI wireframes as fixed-width ASCII. Web app screens, mobile screens, landing pages, single components, common patterns and multi-screen flows.
 
 Every drawing uses only `+ - |`, spaces, text and basic ASCII symbols. Every row is the same width, so it stays aligned in any monospace view: a terminal, a code block, a PR comment, a text file.
 
@@ -63,7 +63,7 @@ git clone https://github.com/yoursharif/ascii-wireframe-layout.git ~/.claude/ski
 
 Or for one project, clone into `.claude/skills/ascii-wireframe` inside that repo.
 
-**Claude apps**: download the repo as a zip and upload it under Settings > Capabilities > Skills.
+**Claude apps**: download the repo as a zip from GitHub and unzip it. Rename the folder from `ascii-wireframe-layout-main` to `ascii-wireframe`, zip that folder again and upload it under Settings > Capabilities > Skills.
 
 **Any other agent**: put the folder somewhere the agent can read and point it at `SKILL.md`, for example from `AGENTS.md` or your system prompt:
 
@@ -78,7 +78,7 @@ When asked for a wireframe, follow ascii-wireframe/SKILL.md.
 Requires Python 3, no dependencies.
 
 ```bash
-python3 scripts/validate.py references/*.md
+python3 scripts/validate.py README.md references/*.md
 ```
 
 For a markdown file it checks every fenced block labelled `wire`. Any other file, or `-` for stdin, is treated as one drawing. It exits non zero when a row is the wrong width or a border does not line up.

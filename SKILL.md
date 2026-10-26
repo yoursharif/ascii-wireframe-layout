@@ -1,6 +1,6 @@
 ---
 name: ascii-wireframe
-description: Draws low-fidelity UI wireframes as fixed-width ASCII text. Use when someone asks for a wireframe, layout sketch, screen outline or text mockup of a web app screen, mobile app screen, landing page, UI component or UI pattern. Output uses only + - | spaces, text and basic ASCII symbols, and every row has the same width.
+description: Draws low-fidelity UI wireframes as fixed-width ASCII text. Use when someone asks for a wireframe, layout sketch, screen outline or text mockup of a web app screen, mobile app screen, landing page, UI component, UI pattern, or a multi-screen flow of wireframes. Output uses only + - | spaces, text and basic ASCII symbols, and every row has the same width. Not for flowcharts or user flow diagrams.
 ---
 
 # ASCII Wireframe
@@ -17,7 +17,7 @@ This skill is plain markdown plus one optional Python script. It works in any ag
 4. All `+`, `|` and `-` characters align perfectly across rows and columns.
 5. Treat each `+` as an exact corner or junction. Treat each `|` and `-` as a continuous border.
 6. Never use proportional spacing, tabs, Unicode box-drawing characters, emoji or decorative characters.
-7. Keep column widths, padding and spacing consistent. Padding is 1 space inside every box. The gap between boxes side by side is 1 column (2 in landing page columns).
+7. Keep column widths, padding and spacing consistent. Padding is 1 space inside every box. The gap between boxes side by side is 1 column, or 2 when equal columns need it to fill the width: three at 80 columns (24 + 2 + 24 + 2 + 24 = 76) or two at 40 (17 + 2 + 17 = 36).
 8. Never put `|` in text content. Never put a bare `+` in text content. Write the word "plus" or use the icon `(+)` or `[+]`.
 9. Before output, validate the character count of every row and fix any misalignment. See Validation.
 
@@ -30,7 +30,7 @@ Pick the width from the target and keep it for the whole drawing.
 | Web app screen | 80 | 76 |
 | Landing page | 80 | 76 |
 | Mobile app screen | 40 | 36 |
-| Component or pattern sheet | 30 to 80 | frame width minus 4 |
+| Component or pattern sheet | 20 to 80 | frame width minus 4 |
 
 Height is free. Inner width is frame width minus 4: one border and one padding space on each side.
 
@@ -41,14 +41,14 @@ Height is free. Inner width is frame width minus 4: one border and one padding s
 3. Lay out the regions first (header, sidebar, main, footer), then fill each region with components.
 4. Build every row with the row formula below. Never eyeball alignment.
 5. Validate. Fix. Validate again.
-6. Output only the drawing.
+6. Output the drawing as described in Output format.
 
 ## Building rows without drifting
 
 - Inner width = frame width minus 4.
 - Every content line is padded with spaces to exactly the inner width, then wrapped as `| ` + line + ` |`.
 - Build nested boxes first. A nested box must be exactly as wide as the space it sits in, or be padded to it.
-- Side by side boxes: box widths plus gaps must equal the parent inner width exactly. If the heights differ, pad the shorter one with blank rows that are the same width as that box.
+- Side by side boxes: box widths plus gaps must equal the parent inner width exactly. If equal widths cannot fill it, leave the spare columns at the right end. If the heights differ, pad the shorter one with blank rows that are the same width as that box.
 - Sidebar plus main layouts share one junction column. The `+` in the separator row sits in the exact column of the `|` in every row below it.
 - Left and right aligned text on one row (title and button, label and toggle): count both strings, then fill the gap with spaces so the row hits the inner width.
 - Centered text: split the spare spaces left and right, extra space goes right.
@@ -87,7 +87,7 @@ Read only what the request needs.
 ## Content rules
 
 - Use realistic labels (Sign in, Add to cart, Last 30 days). Skip lorem ipsum.
-- Use `xxxx xxxxx xxx` for body copy placeholders and `[ IMG ]` boxes for images.
+- Use `xxxx xxxxx xxx` for body copy placeholders and an IMG box for images (see Image placeholder in `references/primitives.md`).
 - Use the exact tokens from `references/primitives.md` so the same thing always looks the same.
 - Keep screens low fidelity. Layout and hierarchy matter, polish does not.
 
